@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { XsensCapacitor } from 'xsens-capacitor';
+
+
 
 @Component({
   selector: 'app-home',
@@ -7,6 +10,15 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  xsens;
+  constructor() {
+    this.xsens = XsensCapacitor;
+    this.initialize();
+  }
+
+  async initialize(){
+    console.log()
+    this.xsens.echo({value: "POO"});
+  }
 
 }

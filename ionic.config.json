@@ -1,5 +1,7 @@
 {
   "name": "xsens-capacitor-app",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
