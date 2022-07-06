@@ -1,20 +1,33 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title> Blank </ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-spinner></ion-spinner>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-content>
+  <ion-list>
+    <ion-button expand="block" (click)="initialize()"> INITIALIZE </ion-button>
+    <ion-button expand="block" (click)="getBluetoothDevices()">
+      GET BLUETOOTH LIST
+    </ion-button>
+  </ion-list>
+
+  <ion-card> </ion-card>
+
+  <!-- [fullscreen]="true" -->
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> -->
 
-  <div id="container">
+  <!-- <div id="container">
     <strong>Ready to create an app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  </div> -->
 </ion-content>
